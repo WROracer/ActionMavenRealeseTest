@@ -1,4 +1,6 @@
-package de.wroracer;public class Main {
+package de.wroracer;
+
+public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
