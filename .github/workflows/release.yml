@@ -32,9 +32,9 @@ jobs:
     - uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
-        automatic_release_tag: "${{ eps.bump.outputs.version }}"
+        automatic_release_tag: "${{ steps.bump.outputs.version }}"
         prerelease: false
-        title: "${{ eps.bump.outputs.version }}"
+        title: "Version: ${{ steps.bump.outputs.version }}"
         files: |
           LICENSE.txt
           target/*.jar
